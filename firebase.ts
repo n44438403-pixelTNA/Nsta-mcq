@@ -7,16 +7,14 @@ import { storage } from "./utils/storage";
 
 // --- FIREBASE CONFIGURATION ---
 const firebaseConfig = {
-  apiKey: "AIzaSyBEDKZVPgwOPCccjWdKSShfvSqC3REDa0c",
-  authDomain: "iic-nst.firebaseapp.com",
-  databaseURL: "https://iic-nst-default-rtdb.firebaseio.com",
-  projectId: "iic-nst",
-  storageBucket: "iic-nst.firebasestorage.app",
-  messagingSenderId: "984309241322",
-  appId: "1:984309241322:web:4dae35987732d630e64e93",
-  measurementId: "G-QX0XT7RSQX"
+apiKey: "AIzaSyAKuIGYmyo4sDbz3ET5zpZmCH5AnQASZxI",
+authDomain: "jan2025-f69a8.firebaseapp.com",
+databaseURL: "https://jan2025-f69a8-default-rtdb.asia-southeast1.firebasedatabase.app",
+projectId: "jan2025-f69a8",
+storageBucket: "jan2025-f69a8.firebasestorage.app",
+messagingSenderId: "158470334860",
+appId: "1:158470334860:web:e67ac809060da43da3cea9"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
