@@ -43,7 +43,7 @@ export const MonthlyMarksheet: React.FC<Props> = ({ user, settings, onClose, rep
       ? `Annual Report ${new Date().getFullYear()}`
       : new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
 
-  const devName = 'Nadim Anwar';
+  const devName = 'Shivangi';
 
   const isScholarshipWinner = stats.percentage >= 90 && stats.totalTests > 0;
   const isConsistencyKing = user.streak >= 5;
