@@ -1,0 +1,34 @@
+--- types.ts
++++ types.ts
+@@ -88,6 +88,7 @@
+   email: string;
+   role: Role;
+   teacherCode?: string; // The code used to register as a teacher
++  teacherExpiryDate?: string; // Auto-lock date for teachers
+   createdAt: string;
+   credits: number; // Premium Credits
+   streak: number; // Consecutive days
+@@ -348,11 +349,21 @@
+     isActive: boolean;
+     price: number;
+     createdBy: string;
+     createdAt: string;
++    durationDays?: number; // E.g., 365 days
+     usedBy?: string; // Reference to Teacher user ID
+     usedAt?: string;
+ }
+
++export interface TeacherStorePlan {
++    id: string;
++    name: string;
++    price: number;
++    durationDays: number;
++    benefits: string[];
++    isActive: boolean;
++}
++
+ export interface SystemSettings {
+     teacherCodes?: TeacherCode[];
++    teacherStorePlans?: TeacherStorePlan[];
+   appName: string; // Long Name
+   activeEvents?: EventBannerConfig[]; // NEW: Event Banners
